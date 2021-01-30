@@ -35,10 +35,10 @@ h1 {
   margin-top:20px;
   margin-right: auto;
   margin-left: auto;
-  width: 35%;
+  width: 45%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
 	.post-list {
     width: 100%;
   }

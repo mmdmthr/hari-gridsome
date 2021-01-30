@@ -128,4 +128,13 @@ query Post ($id: ID!) {
 .post-author {
   margin-top: calc(var(--space) / 2);
 }
+
+table, th, td {
+  border: 1px #aaa solid;
+  padding: 10px;
+}
+
+th {
+  font-weight: bold;
+}
 </style>
