@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Markdown Cheatseet - My Blog</title><meta name="gridsome:hash" content="2b0713881518a083297269ac707be987ac2ab4f7"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" data-key="description" name="description" content="Notes about tech, business and some random thoughts"><meta data-vue-tag="ssr" name="description" content="Pintasan panduan sintaks Markdown"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/assets/css/0.styles.d35d62bf.css" as="style"><link rel="preload" href="/assets/js/app.f103f42b.js" as="script"><link rel="preload" href="/assets/js/page--src-templates-post-vue.f5d70c84.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules-gridsome-app-pages-404-vue.8bffd1bb.js"><link rel="prefetch" href="/assets/js/page--src-pages-archives-vue.9865e88a.js"><link rel="prefetch" href="/assets/js/page--src-pages-index-vue.cd5624df.js"><link rel="prefetch" href="/assets/js/page--src-templates-tag-vue.eb85649a.js"><link rel="stylesheet" href="/assets/css/0.styles.d35d62bf.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">
+    ← My Blog
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><div class="post-title"><h1 class="post-title__text">
+      Markdown Cheatseet
+    </h1><div class="post-meta">
+   Posted 13. February 2021.
+   <strong>1 min read.</strong></div></div><div class="post content-box"><div class="post__header"><!----></div><div class="post__content"><h3 id="sintaks-dasar"><a href="#sintaks-dasar" aria-hidden="true"><span class="icon icon-link"></span></a>Sintaks Dasar</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Sintaks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heading</td>
+<td># h1 <br> ## h2 <br> ### h3</td>
+</tr>
+<tr>
+<td>Bold</td>
+<td>***bold text***</td>
+</tr>
+<tr>
+<td>Italic</td>
+<td>*italic text*</td>
+</tr>
+<tr>
+<td>Blockquote</td>
+<td>> blockquote</td>
+</tr>
+<tr>
+<td>Ordered List</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item</td>
+</tr>
+<tr>
+<td>Unoredered List</td>
+<td>- First item <br> - Second item <br> - Third item</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>`code`</td>
+</tr>
+<tr>
+<td>Horizontal rule</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>[title](<a href="https://www.example.com" target="_blank" rel="nofollow noopener noreferrer">https://www.example.com</a>)</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>![alt text](image.jpg)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sintaks-lanjutan"><a href="#sintaks-lanjutan" aria-hidden="true"><span class="icon icon-link"></span></a>Sintaks Lanjutan</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Sintaks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table</td>
+<td>| Syntax | Description | <br> | ----------- | --------- | <br> | Header | Title | <br> | Paragraph | Text |</td>
+</tr>
+<tr>
+<td>Fenced Code Block</td>
+<td>```<br> { <br> "firstName": "John", <br> "lastName": "Smith", <br> "age": 25 <br> } <br>```</td>
+</tr>
+<tr>
+<td>Footnote</td>
+<td>Here's a sentence with a footnote. [^1] <br> [^1]: This is the footnote.</td>
+</tr>
+<tr>
+<td>Heading ID</td>
+<td>### My Great Heading {#custom-id}</td>
+</tr>
+<tr>
+<td>Definition List</td>
+<td>term <br> : definition</td>
+</tr>
+<tr>
+<td>Strikethrough</td>
+<td>~~~ The world is flat ~~~</td>
+</tr>
+<tr>
+<td>Task List</td>
+<td>- [x] Write the press release <br> - [ ] Update the website <br> - [ ] Contact the media</td>
+</tr>
+</tbody>
+</table>
+</div><div class="post__footer"><div class="post-tags"><a href="/tag/Markdown/" class="post-tags__link"><span>#</span> Markdown
+		</a></div></div></div><div class="post-comments"></div><div class="author post-author"><img alt="Author image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-808c4d5cc58c21806c8d59998b244689'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='5'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-808c4d5cc58c21806c8d59998b244689)' width='180' height='180' xlink:href='data:image/jpeg%3bbase64%2c/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABAAEADASIAAhEBAxEB/8QAGwAAAwADAQEAAAAAAAAAAAAAAwYHAgQFCAH/xAA6EAABAgQEAwQHBgcBAAAAAAABAgMABAURBhIhMQdBcRNhgcEUFSJRkbGyIzI2QlKhJCY0Q2JzotH/xAAZAQEBAAMBAAAAAAAAAAAAAAADAgEEBQD/xAAjEQACAgEDBQADAAAAAAAAAAABAgADIQQRMSIjMlFhEnGx/9oADAMBAAIRAxEAPwCVtC7DHh8jGylNrQJlP2DHUecbFo4r8mdpBiXHBNWbofCdyqvDMiTQ87l/UQo2HibDxiIO4PreJpx%2bqVeop9JmFZze6ykHXL3AbAbRV5BlE3wLm5dxwI7QqSkk7kOpIA7zaFqRrKmKt6sRITCs5sHQbDTn0hNTdYiqK/WYFFSOzGz3J/VsDO0lkzUhNviaZPaJcBy6j3W2j0hwhxY7jLBbM/OJSieZcVLTGXZS029oDlcEHreI/MVh6eqDsoac400DlKyom49%2b1v3iicAGpWTw5VJVpY9JM%2b46tvmEaJQf%2bTFaW523W3mRfWozXxE3i5%2bOp7T8jX0CElQ9tPXyh44vfjmc722vohHUftEdfKBsPWZt1%2bAgmR/DMdRB7awJn%2blbtyV5wf3RhzkzKcCWbBNMNZ4VmTSvIsuuKQf8kquB47eMKk5iDsWpdttkLmSfZSUE5gNwSNooHB0/yS3cgWmHN%2boiY48Q5IVqfm6C03UKU6TdCdezUdVDvGa/SM6qlHCMf1BotZCwHs/2YytfKpaZZeaDbyNVXSRZJ5XO8VPhfhk0SmPTz7iVzNRCXrJFg2g%2b0E9ddYgMsqpVRTSXJX0KRSpIcOwy3F7D46x6za7MsILBSWikZCnYptpbutF6epUYkSLrCwAkA4v/AI4mv9TX0wjL%2b%2bjr5Q98YE2xvM97LX0wiqH2iOvlBWeZmzX4CEpjDs2JeXZQVuuuBCUjmSqKrSuHkkzb1g4qZd9yTlR/6Y4XB%2bnJdcmak6L%2bjktNX5KUTc%2bA%2bcU2WmUrfLagLjc3015ddIda9ySYLWbAAT5T6WzJSqZeWT2LKVZghH3bxhOUiUmVLWtvK4rVSkaXjqGxRGI9kDNtFFA2GEgMRwYoT%2bD2nJdQaC7XuEFVrxjTpqrUhQallrabTZIZIzI%2bG3wh0G994BNNAoJGi99IapwmAog2Vl87yd40w/Ua/OrqgLKZgtpSpna%2bUW0PKJo%2b0tmZ7N1JQtCilSTyIi4TsxllJkj%2b20o/IRKcZM5J1qaSmwdJSod4Gn7fKDvo6TYItF/UKzH3hxL%2bi4OQ5bV595zqMxSPpjcl5hZxGyiXfT2am1FaABmGmmu41GvWC4dfkE4ekWJKbYeS00EqKVfmuc3fveOdSQy/jBpsHMsNOlPSw0MKmxVjCYn8lEdW30hAClhSoySoFV8yb9Y1eyDS7toDadrD398GZC1q1CQOZtEjI3lnBmylW1tRAn3QlKlKNhBVkNt35nQRyausIl1A6ixMeAmCdolVaqD1q9IMIdCNFLcURZQJNgBvyjhYsaC6WtX6FpV5ecFcQTiBebXM2lQv4jyg%2bJWyulPpIP3L/DWN%2bxOyR8nOqfvA/Z//2Q==' /%3e%3c/svg%3e" width="180" data-src="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg" data-srcset="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg 180w" data-sizes="(max-width: 180px) 100vw, 180px" class="author__image g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg" class="author__image g-image g-image--loaded" width="180" alt="Author image"></noscript><!----><p class="author__intro">
+		Notes about tech, business and some random topics
+	</p><p class="author__links"><a href="/archives">Archives</a></p></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2021. </span><span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span></footer></div>
+    <script>window.__INITIAL_STATE__={"data":{"post":{"title":"Markdown Cheatseet","path":"\u002Fmarkdown-cheatseet\u002F","date":"13. February 2021","timeToRead":1,"tags":[{"id":"Markdown","title":"Markdown","path":"\u002Ftag\u002FMarkdown\u002F"}],"description":"Pintasan panduan sintaks Markdown","content":"\u003Ch3 id=\"sintaks-dasar\"\u003E\u003Ca href=\"#sintaks-dasar\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ESintaks Dasar\u003C\u002Fh3\u003E\n\u003Ctable\u003E\n\u003Cthead\u003E\n\u003Ctr\u003E\n\u003Cth\u003EElement\u003C\u002Fth\u003E\n\u003Cth\u003ESintaks\u003C\u002Fth\u003E\n\u003C\u002Ftr\u003E\n\u003C\u002Fthead\u003E\n\u003Ctbody\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EHeading\u003C\u002Ftd\u003E\n\u003Ctd\u003E# h1 \u003Cbr\u003E ## h2 \u003Cbr\u003E ### h3\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EBold\u003C\u002Ftd\u003E\n\u003Ctd\u003E***bold text***\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EItalic\u003C\u002Ftd\u003E\n\u003Ctd\u003E*italic text*\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EBlockquote\u003C\u002Ftd\u003E\n\u003Ctd\u003E\u003E blockquote\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EOrdered List\u003C\u002Ftd\u003E\n\u003Ctd\u003E1. First item \u003Cbr\u003E 2. Second item \u003Cbr\u003E 3. Third item\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EUnoredered List\u003C\u002Ftd\u003E\n\u003Ctd\u003E- First item \u003Cbr\u003E - Second item \u003Cbr\u003E - Third item\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003ECode\u003C\u002Ftd\u003E\n\u003Ctd\u003E`code`\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EHorizontal rule\u003C\u002Ftd\u003E\n\u003Ctd\u003E---\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003ELink\u003C\u002Ftd\u003E\n\u003Ctd\u003E[title](\u003Ca href=\"https:\u002F\u002Fwww.example.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\u003Ehttps:\u002F\u002Fwww.example.com\u003C\u002Fa\u003E)\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EImage\u003C\u002Ftd\u003E\n\u003Ctd\u003E![alt text](image.jpg)\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003C\u002Ftbody\u003E\n\u003C\u002Ftable\u003E\n\u003Ch3 id=\"sintaks-lanjutan\"\u003E\u003Ca href=\"#sintaks-lanjutan\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003ESintaks Lanjutan\u003C\u002Fh3\u003E\n\u003Ctable\u003E\n\u003Cthead\u003E\n\u003Ctr\u003E\n\u003Cth\u003EElement\u003C\u002Fth\u003E\n\u003Cth\u003ESintaks\u003C\u002Fth\u003E\n\u003C\u002Ftr\u003E\n\u003C\u002Fthead\u003E\n\u003Ctbody\u003E\n\u003Ctr\u003E\n\u003Ctd\u003ETable\u003C\u002Ftd\u003E\n\u003Ctd\u003E| Syntax | Description | \u003Cbr\u003E | ----------- | --------- | \u003Cbr\u003E | Header | Title | \u003Cbr\u003E | Paragraph | Text |\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EFenced Code Block\u003C\u002Ftd\u003E\n\u003Ctd\u003E```\u003Cbr\u003E { \u003Cbr\u003E \"firstName\": \"John\", \u003Cbr\u003E \"lastName\": \"Smith\", \u003Cbr\u003E \"age\": 25 \u003Cbr\u003E } \u003Cbr\u003E```\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EFootnote\u003C\u002Ftd\u003E\n\u003Ctd\u003EHere's a sentence with a footnote. [^1] \u003Cbr\u003E [^1]: This is the footnote.\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EHeading ID\u003C\u002Ftd\u003E\n\u003Ctd\u003E### My Great Heading {#custom-id}\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EDefinition List\u003C\u002Ftd\u003E\n\u003Ctd\u003Eterm \u003Cbr\u003E : definition\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003EStrikethrough\u003C\u002Ftd\u003E\n\u003Ctd\u003E~~~ The world is flat ~~~\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003Ctr\u003E\n\u003Ctd\u003ETask List\u003C\u002Ftd\u003E\n\u003Ctd\u003E- [x] Write the press release \u003Cbr\u003E - [ ] Update the website \u003Cbr\u003E - [ ] Contact the media\u003C\u002Ftd\u003E\n\u003C\u002Ftr\u003E\n\u003C\u002Ftbody\u003E\n\u003C\u002Ftable\u003E\n","cover_image":null}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.f103f42b.js" defer></script><script src="/assets/js/page--src-templates-post-vue.f5d70c84.js" defer></script>
+  </body>
+</html>

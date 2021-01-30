@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head>
+    <title>Cara Menggunakan Markdown Dasar - My Blog</title><meta name="gridsome:hash" content="2b0713881518a083297269ac707be987ac2ab4f7"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><meta data-vue-tag="ssr" data-key="description" name="description" content="Notes about tech, business and some random thoughts"><meta data-vue-tag="ssr" name="description" content="Markdown dirancang dengan tujuan mudah dibaca oleh manusia. Sebagian besar sintaksnya sederhana dan mudah dipelajari."><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/assets/css/0.styles.d35d62bf.css" as="style"><link rel="preload" href="/assets/js/app.f103f42b.js" as="script"><link rel="preload" href="/assets/js/page--src-templates-post-vue.f5d70c84.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules-gridsome-app-pages-404-vue.8bffd1bb.js"><link rel="prefetch" href="/assets/js/page--src-pages-archives-vue.9865e88a.js"><link rel="prefetch" href="/assets/js/page--src-pages-index-vue.cd5624df.js"><link rel="prefetch" href="/assets/js/page--src-templates-tag-vue.eb85649a.js"><link rel="stylesheet" href="/assets/css/0.styles.d35d62bf.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+  </head>
+  <body >
+    <script>
+      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+      (function() {
+        window.__onThemeChange = function() {};
+        function setTheme(newTheme) {
+          window.__theme = newTheme;
+          preferredTheme = newTheme;
+          document.body.setAttribute('data-theme', newTheme);
+          window.__onThemeChange(newTheme);
+        }
+
+        var preferredTheme;
+        try {
+          preferredTheme = localStorage.getItem('theme');
+        } catch (err) { }
+
+        window.__setPreferredTheme = function(newTheme) {
+          setTheme(newTheme);
+          try {
+            localStorage.setItem('theme', newTheme);
+          } catch (err) {}
+        }
+
+        var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkQuery.addListener(function(e) {
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        });
+
+        setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+      })();
+    </script>
+
+    <div id="app" data-server-rendered="true"><header class="header"><div class="header__left"><a href="/" class="logo active"><span class="logo__text">
+    ← My Blog
+  </span></a></div><div class="header__right"><button role="button" aria-label="Toggle dark/light" class="toggle-theme"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div></header><main class="main"><div class="post-title"><h1 class="post-title__text">
+      Cara Menggunakan Markdown Dasar
+    </h1><div class="post-meta">
+   Posted 7. February 2021.
+   <strong>2 min read.</strong></div></div><div class="post content-box"><div class="post__header"><!----></div><div class="post__content"><p>Markdown dirancang dengan tujuan mudah dibaca oleh manusia. Sebagian besar sintaksnya sederhana dan intuitif sehingga mudah dipelajari. Berikut beberapa sintaks yang mungkin sering anda gunakan dalam menulis.</p>
+<h2 id="heading"><a href="#heading" aria-hidden="true"><span class="icon icon-link"></span></a>Heading</h2>
+<pre class="language-text"><code class="language-text"># Heading 1
+## Heading 2
+### Heading 3</code></pre>
+<p>Heading pada Markdown ditulis dengan tanda pagar/hash (#). Jumlah pagar menentukan tingkat heading tersebut. Satu pagar menghasilkan h1, dua pagar menghasilkan h2 dan seterusnya sampai maksimal 6 tingkat. Pada praktiknya kita seringkali hanya menggunakan 3 tingkat saja.</p>
+<h2 id="text"><a href="#text" aria-hidden="true"><span class="icon icon-link"></span></a>Text</h2>
+<pre class="language-text"><code class="language-text">*italic*
+**bold**
+***bold-italic***
+[link](https://example.com)</code></pre>
+<p>Biasanya kita membutuhkan <em>tekanan</em> pada tulisan kita. Kita bisa menggunakan Markdown untuk membuat penekanan dengan <em>cetak miring</em>, <strong>cetak tebal</strong> atau <strong><em>cetak miring dan tebal</em></strong>. Markdown membuatnya cukup intuitif dengan melambangkannya sesuai jumlah tanda bintang.</p>
+<p>Untuk membuat teks link, bungkus teksnya menggunakan tanda kurung siku [] lalu letakkan url setelahnya dengan membungkusnya menggunakan kurung biasa ().</p>
+<h2 id="image"><a href="#image" aria-hidden="true"><span class="icon icon-link"></span></a>Image</h2>
+<pre class="language-text"><code class="language-text">![alt](https://image.com/link.jpg)</code></pre>
+<p>Untuk menyematkan gambar pada Markdown caranya hampir sama dengan link, hanya saja sintaks image diawali dengan tanda seru !. Di dalam kurung siku diisi dengan alt atau teks deskriptif mengenai gambar. lalu letakkan url gambar setelahnya dengan membungkusnya menggunakan kurung biasa ().</p>
+<h2 id="list"><a href="#list" aria-hidden="true"><span class="icon icon-link"></span></a>List</h2>
+<pre class="language-text"><code class="language-text">* Susu
+* Roti
+    * Roti Tawar
+    * Roti selai cokelat
+* Mentega
+
+1. Merapikan taman
+2. Membersihkan dapur
+3. Memasak</code></pre>
+<p>Memformat list menggunakan HTML mungkin cukup merepotkan. Di Markdown kita bisa membuat list dengan sangat natural. Jika menginginkan bullet list, ganti tanda * pada contoh dengan - atau + lalu tanda itu akan diubah menjadi dot (titik). Kita juga bisa membuat list yang bersarang dengan menambah 4 spasi, list dengan indentasi akan otomatis menjadi child. Untuk format angka lakukan hal yang serupa, tetapi tidak menggunakan tanda bintang, gunakan saja angka biasa</p>
+<ul>
+<li>Susu</li>
+</ul>
+<ul>
+<li>
+<p>Roti</p>
+<ul>
+<li>Roti Tawar</li>
+</ul>
+<ul>
+<li>Roti selai cokelat</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Mentega</li>
+</ul>
+<ol>
+<li>
+<p>Merapikan taman</p>
+<ol>
+<li>Memotong rumput</li>
+<li>Menyiram bunga</li>
+</ol>
+</li>
+<li>Membersihkan dapur</li>
+<li>Memasak</li>
+</ol>
+<h2 id="quotes-kutipan"><a href="#quotes-kutipan" aria-hidden="true"><span class="icon icon-link"></span></a>Quotes (kutipan)</h2>
+<pre class="language-text"><code class="language-text">&gt; &quot;I think it is possible for ordinary people to choose to be extraordinary.&quot;</code></pre>
+<p>Kutipan pada Markdown diawali dengan tanda lebih besar dari (>). Contoh di atas akan diubah menjadi blok quote di bawah.</p>
+<blockquote>
+<p>"I think it is possible for ordinary people to choose to be extraordinary."</p>
+</blockquote>
+<p>Dengan menguasai sintaks di atas, kita sudah bisa menulis konten menggunakan Markdown. Masih banyak lagi yang bisa kita lakukan dengan Markdown, baca di artikel <a href="https://mmdmthr.github.io/cara-menggunakan-markdown-lanjutan" target="_blank" rel="nofollow noopener noreferrer">Cara Menggunakan Markdown Lanjutan</a></p>
+</div><div class="post__footer"><div class="post-tags"><a href="/tag/Markdown/" class="post-tags__link"><span>#</span> Markdown
+		</a><a href="/tag/Website/" class="post-tags__link"><span>#</span> Website
+		</a></div></div></div><div class="post-comments"></div><div class="author post-author"><img alt="Author image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-808c4d5cc58c21806c8d59998b244689'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='5'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-808c4d5cc58c21806c8d59998b244689)' width='180' height='180' xlink:href='data:image/jpeg%3bbase64%2c/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABAAEADASIAAhEBAxEB/8QAGwAAAwADAQEAAAAAAAAAAAAAAwYHAgQFCAH/xAA6EAABAgQEAwQHBgcBAAAAAAABAgMABAURBhIhMQdBcRNhgcEUFSJRkbGyIzI2QlKhJCY0Q2JzotH/xAAZAQEBAAMBAAAAAAAAAAAAAAADAgEEBQD/xAAjEQACAgEDBQADAAAAAAAAAAABAgADIQQRMSIjMlFhEnGx/9oADAMBAAIRAxEAPwCVtC7DHh8jGylNrQJlP2DHUecbFo4r8mdpBiXHBNWbofCdyqvDMiTQ87l/UQo2HibDxiIO4PreJpx%2bqVeop9JmFZze6ykHXL3AbAbRV5BlE3wLm5dxwI7QqSkk7kOpIA7zaFqRrKmKt6sRITCs5sHQbDTn0hNTdYiqK/WYFFSOzGz3J/VsDO0lkzUhNviaZPaJcBy6j3W2j0hwhxY7jLBbM/OJSieZcVLTGXZS029oDlcEHreI/MVh6eqDsoac400DlKyom49%2b1v3iicAGpWTw5VJVpY9JM%2b46tvmEaJQf%2bTFaW523W3mRfWozXxE3i5%2bOp7T8jX0CElQ9tPXyh44vfjmc722vohHUftEdfKBsPWZt1%2bAgmR/DMdRB7awJn%2blbtyV5wf3RhzkzKcCWbBNMNZ4VmTSvIsuuKQf8kquB47eMKk5iDsWpdttkLmSfZSUE5gNwSNooHB0/yS3cgWmHN%2boiY48Q5IVqfm6C03UKU6TdCdezUdVDvGa/SM6qlHCMf1BotZCwHs/2YytfKpaZZeaDbyNVXSRZJ5XO8VPhfhk0SmPTz7iVzNRCXrJFg2g%2b0E9ddYgMsqpVRTSXJX0KRSpIcOwy3F7D46x6za7MsILBSWikZCnYptpbutF6epUYkSLrCwAkA4v/AI4mv9TX0wjL%2b%2bjr5Q98YE2xvM97LX0wiqH2iOvlBWeZmzX4CEpjDs2JeXZQVuuuBCUjmSqKrSuHkkzb1g4qZd9yTlR/6Y4XB%2bnJdcmak6L%2bjktNX5KUTc%2bA%2bcU2WmUrfLagLjc3015ddIda9ySYLWbAAT5T6WzJSqZeWT2LKVZghH3bxhOUiUmVLWtvK4rVSkaXjqGxRGI9kDNtFFA2GEgMRwYoT%2bD2nJdQaC7XuEFVrxjTpqrUhQallrabTZIZIzI%2bG3wh0G994BNNAoJGi99IapwmAog2Vl87yd40w/Ua/OrqgLKZgtpSpna%2bUW0PKJo%2b0tmZ7N1JQtCilSTyIi4TsxllJkj%2b20o/IRKcZM5J1qaSmwdJSod4Gn7fKDvo6TYItF/UKzH3hxL%2bi4OQ5bV595zqMxSPpjcl5hZxGyiXfT2am1FaABmGmmu41GvWC4dfkE4ekWJKbYeS00EqKVfmuc3fveOdSQy/jBpsHMsNOlPSw0MKmxVjCYn8lEdW30hAClhSoySoFV8yb9Y1eyDS7toDadrD398GZC1q1CQOZtEjI3lnBmylW1tRAn3QlKlKNhBVkNt35nQRyausIl1A6ixMeAmCdolVaqD1q9IMIdCNFLcURZQJNgBvyjhYsaC6WtX6FpV5ecFcQTiBebXM2lQv4jyg%2bJWyulPpIP3L/DWN%2bxOyR8nOqfvA/Z//2Q==' /%3e%3c/svg%3e" width="180" data-src="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg" data-srcset="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg 180w" data-sizes="(max-width: 180px) 100vw, 180px" class="author__image g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/author.e6b6009.bde65b8766e0b19929299502b63f1b3e.jpg" class="author__image g-image g-image--loaded" width="180" alt="Author image"></noscript><!----><p class="author__intro">
+		Notes about tech, business and some random topics
+	</p><p class="author__links"><a href="/archives">Archives</a></p></div></main><footer class="footer"><span class="footer__copyright">Copyright © 2021. </span><span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span></footer></div>
+    <script>window.__INITIAL_STATE__={"data":{"post":{"title":"Cara Menggunakan Markdown Dasar","path":"\u002Fcara-menggunakan-markdown-dasar\u002F","date":"7. February 2021","timeToRead":2,"tags":[{"id":"Markdown","title":"Markdown","path":"\u002Ftag\u002FMarkdown\u002F"},{"id":"Website","title":"Website","path":"\u002Ftag\u002FWebsite\u002F"}],"description":"Markdown dirancang dengan tujuan mudah dibaca oleh manusia. Sebagian besar sintaksnya sederhana dan mudah dipelajari.","content":"\u003Cp\u003EMarkdown dirancang dengan tujuan mudah dibaca oleh manusia. Sebagian besar sintaksnya sederhana dan intuitif sehingga mudah dipelajari. Berikut beberapa sintaks yang mungkin sering anda gunakan dalam menulis.\u003C\u002Fp\u003E\n\u003Ch2 id=\"heading\"\u003E\u003Ca href=\"#heading\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EHeading\u003C\u002Fh2\u003E\n\u003Cpre class=\"language-text\"\u003E\u003Ccode class=\"language-text\"\u003E# Heading 1\n## Heading 2\n### Heading 3\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EHeading pada Markdown ditulis dengan tanda pagar\u002Fhash (#). Jumlah pagar menentukan tingkat heading tersebut. Satu pagar menghasilkan h1, dua pagar menghasilkan h2 dan seterusnya sampai maksimal 6 tingkat. Pada praktiknya kita seringkali hanya menggunakan 3 tingkat saja.\u003C\u002Fp\u003E\n\u003Ch2 id=\"text\"\u003E\u003Ca href=\"#text\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EText\u003C\u002Fh2\u003E\n\u003Cpre class=\"language-text\"\u003E\u003Ccode class=\"language-text\"\u003E*italic*\n**bold**\n***bold-italic***\n[link](https:\u002F\u002Fexample.com)\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EBiasanya kita membutuhkan \u003Cem\u003Etekanan\u003C\u002Fem\u003E pada tulisan kita. Kita bisa menggunakan Markdown untuk membuat penekanan dengan \u003Cem\u003Ecetak miring\u003C\u002Fem\u003E, \u003Cstrong\u003Ecetak tebal\u003C\u002Fstrong\u003E atau \u003Cstrong\u003E\u003Cem\u003Ecetak miring dan tebal\u003C\u002Fem\u003E\u003C\u002Fstrong\u003E. Markdown membuatnya cukup intuitif dengan melambangkannya sesuai jumlah tanda bintang.\u003C\u002Fp\u003E\n\u003Cp\u003EUntuk membuat teks link, bungkus teksnya menggunakan tanda kurung siku [] lalu letakkan url setelahnya dengan membungkusnya menggunakan kurung biasa ().\u003C\u002Fp\u003E\n\u003Ch2 id=\"image\"\u003E\u003Ca href=\"#image\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EImage\u003C\u002Fh2\u003E\n\u003Cpre class=\"language-text\"\u003E\u003Ccode class=\"language-text\"\u003E![alt](https:\u002F\u002Fimage.com\u002Flink.jpg)\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EUntuk menyematkan gambar pada Markdown caranya hampir sama dengan link, hanya saja sintaks image diawali dengan tanda seru !. Di dalam kurung siku diisi dengan alt atau teks deskriptif mengenai gambar. lalu letakkan url gambar setelahnya dengan membungkusnya menggunakan kurung biasa ().\u003C\u002Fp\u003E\n\u003Ch2 id=\"list\"\u003E\u003Ca href=\"#list\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EList\u003C\u002Fh2\u003E\n\u003Cpre class=\"language-text\"\u003E\u003Ccode class=\"language-text\"\u003E* Susu\n* Roti\n    * Roti Tawar\n    * Roti selai cokelat\n* Mentega\n\n1. Merapikan taman\n2. Membersihkan dapur\n3. Memasak\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EMemformat list menggunakan HTML mungkin cukup merepotkan. Di Markdown kita bisa membuat list dengan sangat natural. Jika menginginkan bullet list, ganti tanda * pada contoh dengan - atau + lalu tanda itu akan diubah menjadi dot (titik). Kita juga bisa membuat list yang bersarang dengan menambah 4 spasi, list dengan indentasi akan otomatis menjadi child. Untuk format angka lakukan hal yang serupa, tetapi tidak menggunakan tanda bintang, gunakan saja angka biasa\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ESusu\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cul\u003E\n\u003Cli\u003E\n\u003Cp\u003ERoti\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ERoti Tawar\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cul\u003E\n\u003Cli\u003ERoti selai cokelat\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cul\u003E\n\u003Cli\u003EMentega\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Col\u003E\n\u003Cli\u003E\n\u003Cp\u003EMerapikan taman\u003C\u002Fp\u003E\n\u003Col\u003E\n\u003Cli\u003EMemotong rumput\u003C\u002Fli\u003E\n\u003Cli\u003EMenyiram bunga\u003C\u002Fli\u003E\n\u003C\u002Fol\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EMembersihkan dapur\u003C\u002Fli\u003E\n\u003Cli\u003EMemasak\u003C\u002Fli\u003E\n\u003C\u002Fol\u003E\n\u003Ch2 id=\"quotes-kutipan\"\u003E\u003Ca href=\"#quotes-kutipan\" aria-hidden=\"true\"\u003E\u003Cspan class=\"icon icon-link\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fa\u003EQuotes (kutipan)\u003C\u002Fh2\u003E\n\u003Cpre class=\"language-text\"\u003E\u003Ccode class=\"language-text\"\u003E&gt; &quot;I think it is possible for ordinary people to choose to be extraordinary.&quot;\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\n\u003Cp\u003EKutipan pada Markdown diawali dengan tanda lebih besar dari (\u003E). Contoh di atas akan diubah menjadi blok quote di bawah.\u003C\u002Fp\u003E\n\u003Cblockquote\u003E\n\u003Cp\u003E\"I think it is possible for ordinary people to choose to be extraordinary.\"\u003C\u002Fp\u003E\n\u003C\u002Fblockquote\u003E\n\u003Cp\u003EDengan menguasai sintaks di atas, kita sudah bisa menulis konten menggunakan Markdown. Masih banyak lagi yang bisa kita lakukan dengan Markdown, baca di artikel \u003Ca href=\"https:\u002F\u002Fmmdmthr.github.io\u002Fcara-menggunakan-markdown-lanjutan\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"\u003ECara Menggunakan Markdown Lanjutan\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n","cover_image":null}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.f103f42b.js" defer></script><script src="/assets/js/page--src-templates-post-vue.f5d70c84.js" defer></script>
+  </body>
+</html>
